@@ -1,0 +1,5 @@
+<div class="row justify-content-center" role="menu">
+    {{#foreach navigation}}
+    <div class="nav-{{slug}}{{#if current}} nav-current{{/if}} mx-2" role="menuitem"><a href="{{url absolute="true"}}">{{label}}</a></div>
+    {{/foreach}}
+</div>

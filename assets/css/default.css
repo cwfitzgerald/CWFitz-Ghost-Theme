@@ -108,13 +108,18 @@ ul.menu li:hover {
   color:#767676;
   font-weight:300;
 }
+.description{
+  font-size:15px;
+  color:#767676;
+  font-weight:300;
+}
 i.read-more{
   font-size:10px;
   margin-left:5px;
   margin-right:5px;
 }
 a.read-more{
-  padding:5px;
+  padding:0px;
 }
 .container {
   margin-top:40px;

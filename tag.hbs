@@ -1,11 +1,16 @@
 {{!< default}}
 {{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
 
+{{! Everything inside the #author tags pulls data from the author }}
+{{#tag}}
+<section class="text-center">
+    <h3 class="title mb-0">{{name}}</h3>
+    <div class="description mt-1">{{description}}</div>
+</section>
+{{/tag}}
 
-{{! The main content area on the homepage }}
-<main class="content" role="main">
-
+{{! The main content area on the tag page }}
+<main class="container-fluid" role="main">
     {{! The tag below includes the post loop - partials/loop.hbs }}
     {{> "loop"}}
-
 </main>
