@@ -5,21 +5,23 @@
 
 {{! Everything inside the #author tags pulls data from the author }}
 {{#author}}
-<section class="text-center">
-    <h3 class="title mb-0">About {{name}}</h3>
-    <div class="author-meta">
-        {{#if location}}<i class="fa fa-map-marker"></i> {{location}}&nbsp;{{/if}}
-        {{#if website}}<i class="fa fa-link"></i><a href="{{website}}"> {{website}}</a>&nbsp;{{/if}}
-        <i class="fa fa-chart-bar"></i>
-        {{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}
-    </div>
-    <div class="description mt-1">{{bio}}</div>
-</section>
-<hr class="my-2">
+<div class="row mx-0 justify-content-center">
+    <section class="col-md-7 col-xs-12 mb-2">
+        <div class="text-center">
+            <h3 class="title mb-0">About {{name}}</h3>
+            <div class="author-meta">
+                {{#if location}}<i class="fa fa-map-marker"></i> {{location}}&nbsp;{{/if}}
+                {{#if website}}<i class="fa fa-link"></i><a href="{{website}}"> {{website}}</a>&nbsp;{{/if}}
+                <i class="fa fa-chart-bar"></i>
+                {{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}
+            </div>
+        </div>
+        <div class="text-md-center description mt-1">{{bio}}</div>
+    </section>
+</div>
 {{/author}}
 
+<h4 class="text-left col-md-12 mt-2 mt-md-0 mb-0">Articles:</h4>
 {{! The main content area on the homepage }}
-<main class="container-fluid" role="main">
-    {{! The tag below includes the post loop - partials/loop.hbs }}
-    {{> "loop"}}
-</main>
+{{! The tag below includes the post loop - partials/loop.hbs }}
+{{> "loop"}}

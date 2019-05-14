@@ -10,8 +10,8 @@
         </h2>
 
     </header>
-    <div class="subhead"> <time datetime="{{date format='YYYY-MM-DD'}}" class="mr-2">{{date format="DD MMMM YYYY"}}</time>
-        {{tags prefix="<span class='fa fa-tags'></span>&nbsp;"}}</div>
+    <div class="subhead"> <time datetime="{{date format='YYYY-MM-DD'}}" class="">{{date format="YYYY-MM-DD"}}</time> by {{authors limit="1"}}
+        <span class="ml-2">{{tags prefix="<span class='fa fa-tags'></span>&nbsp;"}}</span></div>
 
     <section class="description">
         <p>{{excerpt words="30"}}

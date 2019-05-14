@@ -56,8 +56,8 @@
     {{/if}}
     {{/is}}
     <div class="container">
-        <div class="row">
-            <div class="col-md-2 d-none d-md-block">
+        <div class="row justify-content-center">
+            <div class="col-md-2 d-none d-lg-block">
                 {{> "navbar"}}
             </div>
             <div class="col-md-10 col-sm-12">
@@ -68,14 +68,14 @@
     </div>
 
     <footer class="page-footer">
-        <div class="container mt-n3">
+        <div class="container mt-n2">
             <div class="row mx-0">
                 <div class="col-12 text-center">
                     <i class="el el-stop footer-icon"></i>
                     &copy; 2019-{{date format="YYYY"}} <a href="{{@blog.url}}">{{@blog.title}}</a>. All rights
                     reserved.<br><br>
                 </div>
-                <div class="mx-auto d-block d-md-none">
+                <div class="mx-auto d-block d-lg-none">
                     {{> "info"}}
                 </div>
             </div>
