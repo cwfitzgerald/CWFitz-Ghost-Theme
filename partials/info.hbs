@@ -1,0 +1,23 @@
+<div class="list-unstyled menu col-12 pl-1">
+    <li>
+        <a href="https://github.com/cwfitzgerald" target="_blank">
+            <i class="fab fa-github mr-1"></i>GitHub
+        </a>
+    </li>
+
+    {{#if @blog.facebook}}
+    <li>
+        <a href="{{facebook_url}}" target="_blank">
+            <i class="el el-facebook"></i> {{@blog.facebook}}
+        </a>
+    </li>
+    {{/if}}
+
+    {{#if @blog.twitter}}
+    <li>
+        <a href="{{twitter_url}}" target="_blank">
+            <i class="el el-twitter"></i> {{@blog.twitter}}
+        </a>
+    </li>
+    {{/if}}
+</div>

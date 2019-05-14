@@ -68,12 +68,15 @@
     </div>
 
     <footer class="page-footer">
-        <div class="container mt-n4">
+        <div class="container mt-n3">
             <div class="row mx-0">
                 <div class="col-12 text-center">
                     <i class="el el-stop footer-icon"></i>
-                    &copy; {{date format="YYYY"}} <a href="{{@blog.url}}">{{@blog.title}}</a>. All rights
+                    &copy; 2019-{{date format="YYYY"}} <a href="{{@blog.url}}">{{@blog.title}}</a>. All rights
                     reserved.<br><br>
+                </div>
+                <div class="mx-auto d-block d-md-none">
+                    {{> "info"}}
                 </div>
             </div>
         </div>
